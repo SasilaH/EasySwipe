@@ -132,6 +132,26 @@ class EasyListen(Leap.Listener):
 
                 print("ScreenTap " + str(screenTapFinger)) ######SWAP WITH FUCNTION
 
+        for hand in frame.hands:
+
+            #Identifies the hand
+            handType = "Left" if hand.is_left else "Right"
+
+            grab = hand.grab_strength
+            pinch = hand.pinch_strength
+            #print(handType + " p:" + str(pinch) + " g:"+ str(grab)) ######SWAP WITH FUCNTION
+            if grab ==1:
+                if(fistTimer > 2):
+                    pyautogui.hotkey('volumemute')
+                    print("g"+str(grab))
+                    sleep(1.2)
+                    fistTimer = 0
+                else:
+                    fistTimer +=1
+            '''elif pinch > 0.99:
+                pyautogui.hotkey('printscreen')
+                print("p"+str(pinch))
+                sleep(1.5)'''
 
 def main():
     # Create a sample listener and controller
