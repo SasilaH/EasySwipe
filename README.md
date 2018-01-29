@@ -1,5 +1,5 @@
 # EasySwipe
-Gsture-based computer interaction for Tinder and Windows volume controls.
+Gesture-based computer interaction for Tinder and Windows volume controls.
 
 # Requirements
 Leap Motion SDK, Pyautogui, Pygame
