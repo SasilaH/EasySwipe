@@ -1,5 +1,5 @@
 # EasySwipe
-Leap motion gesture based computer interaction, mainly Tinder but also volume controls and quick maths
+Gsture-based computer interaction for Tinder and windows volume controls.
 
 # Requirements
 Leap Motion SDK, Pyautogui, Pygame
